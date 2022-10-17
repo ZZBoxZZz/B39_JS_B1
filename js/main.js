@@ -10,95 +10,98 @@
  * 
  */
 
-var A = parseInt(prompt('Nhập số ngày làm:  '));
-
-var B = A * 100000;
-
-console.log("Tổng lương: "+A+" ngày là "+B);
-
-/**
-* Đầu vào:
- * 5 số thực cho 5 biến
- * Xử lí:
- * Tạo biến Agver = Tổng 5 số /5
- * Đầu ra
- * 
- * Xuất ra màn hình trung bình của 5
- * 
- * 
- */
 
 
-const num1 = parseInt(prompt('Enter the first number '));
-const num2 = parseInt(prompt('Enter the second number '));
-const num3 = parseInt(prompt('Enter the third number '));
-const num4 = parseInt(prompt('Enter the fourth number '));
-const num5 = parseInt(prompt('Enter the fifth number '));
+document.getElementById("btnB1").onclick = function() {
+    var A = document.getElementById("inputB1").value;
 
-var Agver = (num1+num2+num3+num4+num5)/5;
+    var B = A * 100000;
+    document.getElementById("infoB1").innerHTML = "Tổng lương: "+A+" ngày là "+B;
+};
 
-console.log("Gía trị trung bình là: "+Agver);
-
-/**
-* Đầu vào:
- * Tạo biến Money là số tiền sẽ nhập
- * Xử lí:
- * VND = Money * 23500
- * Đầu ra
- * 
- * Xuất ra màn hình Số VND LÀ : XXXXX VND
- * 
- * 
- */
-const money = parseInt(prompt('Money: '));
+// /**
+// * Đầu vào:
+//  * 5 số thực cho 5 biến
+//  * Xử lí:
+//  * Tạo biến Agver = Tổng 5 số /5
+//  * Đầu ra
+//  * 
+//  * Xuất ra màn hình trung bình của 5
+//  * 
+//  * 
+//  */
 
 
-var VND = money * 23500;
+// const num1 = parseInt(prompt('Enter the first number '));
+// const num2 = parseInt(prompt('Enter the second number '));
+// const num3 = parseInt(prompt('Enter the third number '));
+// const num4 = parseInt(prompt('Enter the fourth number '));
+// const num5 = parseInt(prompt('Enter the fifth number '));
 
-console.log("Số VND Là: "+VND+" VND");
+// var Agver = (num1+num2+num3+num4+num5)/5;
 
-/**
-* Đầu vào:
- * 2 biến chiều dài chiều rộng
- * Xử lí:
- * Diện tích = dài * rộng
- * Chu vi = (dài + rộng ) *2
- * Đầu ra
- * 
- * Xuất ra màn hình Chu vi là: ..... , diện tích là ......
- * 
- * 
- */
+// console.log("Gía trị trung bình là: "+Agver);
 
-const dai = parseInt(prompt('Chiều dài là: '));
-const rong = parseInt(prompt('Chiều rộng là: '));
-
-var chuvi = (dai + rong) *2;
-var dientich = dai * rong
-
-console.log("Chu vi là: "+chuvi+", diện tích là: "+dientich);
-
-/**
-* Đầu vào:
- * tạo 1 biến a là số người dùng nhập
- * Xử lí:
- * num1 = số đầu
- * num2 = số sau
- * sum = num1 + num2
- * Đầu ra
- * 
- * Xuất ra màn hình Tổng là: .....
- * 
- * 
- */
+// /**
+// * Đầu vào:
+//  * Tạo biến Money là số tiền sẽ nhập
+//  * Xử lí:
+//  * VND = Money * 23500
+//  * Đầu ra
+//  * 
+//  * Xuất ra màn hình Số VND LÀ : XXXXX VND
+//  * 
+//  * 
+//  */
+// const money = parseInt(prompt('Money: '));
 
 
-const a = parseInt(prompt("Nhập vào 1 số: "));
+// var VND = money * 23500;
 
-var num10 = a % 10;
-var num20 = a / 10;
+// console.log("Số VND Là: "+VND+" VND");
 
-var sum = parseInt(num1) + parseInt(num2);
+// /**
+// * Đầu vào:
+//  * 2 biến chiều dài chiều rộng
+//  * Xử lí:
+//  * Diện tích = dài * rộng
+//  * Chu vi = (dài + rộng ) *2
+//  * Đầu ra
+//  * 
+//  * Xuất ra màn hình Chu vi là: ..... , diện tích là ......
+//  * 
+//  * 
+//  */
 
-console.log("Tổng là " +sum);
+// const dai = parseInt(prompt('Chiều dài là: '));
+// const rong = parseInt(prompt('Chiều rộng là: '));
+
+// var chuvi = (dai + rong) *2;
+// var dientich = dai * rong
+
+// console.log("Chu vi là: "+chuvi+", diện tích là: "+dientich);
+
+// /**
+// * Đầu vào:
+//  * tạo 1 biến a là số người dùng nhập
+//  * Xử lí:
+//  * num1 = số đầu
+//  * num2 = số sau
+//  * sum = num1 + num2
+//  * Đầu ra
+//  * 
+//  * Xuất ra màn hình Tổng là: .....
+//  * 
+//  * 
+//  */
+
+
+// const a = parseInt(prompt("Nhập vào 1 số: "));
+
+// var num10 = a % 10;
+// var num20 = a / 10;
+
+// var sum = parseInt(num1) + parseInt(num2);
+
+// console.log("Tổng là " +sum);
 
