@@ -37,10 +37,19 @@ document.getElementById("btnB1").onclick = function() {
 // const num3 = parseInt(prompt('Enter the third number '));
 // const num4 = parseInt(prompt('Enter the fourth number '));
 // const num5 = parseInt(prompt('Enter the fifth number '));
+document.getElementById("btnB2").onclick = function(){
+    var num1 = document.getElementById("inputB2").value*1;
+    var num2 = document.getElementById("inputB2_1").value*1;
+    var num3 = document.getElementById("inputB2_2").value*1;
+    var num4 = document.getElementById("inputB2_3").value*1;
+    var num5 = document.getElementById("inputB2_4").value*1;
+    // var Agver = (num1+num2+num3+num4+num5)/5;
+    var Avg = (num1 + num2 + num3 + num4 + num5)/5;
 
-// var Agver = (num1+num2+num3+num4+num5)/5;
+    document.getElementById("infoB2").innerHTML = "Tổng 5 số là: " + Avg+".";
+    // console.log("Gía trị trung bình là: "+Agver);
+};
 
-// console.log("Gía trị trung bình là: "+Agver);
 
 // /**
 // * Đầu vào:
@@ -54,7 +63,13 @@ document.getElementById("btnB1").onclick = function() {
 //  * 
 //  */
 // const money = parseInt(prompt('Money: '));
+document.getElementById("btnB3").onclick = function(){
+    var money = document.getElementById("inputB3").value*1;
 
+    var transfer = money * 23500;
+   
+    document.getElementById("infoB3").innerHTML = "Số tiền chuyển: "+ new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(transfer);
+};
 
 // var VND = money * 23500;
 
